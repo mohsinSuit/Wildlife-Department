@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>KP Wildlife Department</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/apple-touch-icon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+    <script src="https://kit.fontawesome.com/49d698e135.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+    <script src="https://kit.fontawesome.com/49d698e135.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav" style="background-color: #1b550a">
+        <a id="kp-fish-farm" href="dashboard.html" style="margin-top: 190px !important; background-color: #0e3402; color: #ffffff; text-decoration: none; padding: 10px 0px; display: block; text-align: center;">Dashboard</a>
+
+        <div style="position: relative; text-align: center;">
+            <a id="kp-fish-farm-home" href="#" onclick="toggleDropdown('homeSubMenu')" style="background-color: #0e3402; color: #ffffff; text-decoration: none; padding: 10px;">Home Page &#9662;</a>
+            <div id="homeSubMenu" style="display: none;">
+                <a id="homeSlider" href="slider.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Slider</a>
+                <a id="homeNews" href="news.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">News</a>
+            </div>
+        </div>
+
+        <div style="position: relative; text-align: center;">
+            <a id="kp-fish-farm-about" href="#" onclick="toggleDropdown('aboutSubMenu')" style="background-color: #0e3402; color: #ffffff; text-decoration: none; padding: 10px;">About &#9662;</a>
+            <div id="aboutSubMenu" style="display: none;">
+                <a id="aboutUs" href="about.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">About Us</a>
+                <a id="regionalOffices" href="regional.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Regional Offices</a>
+                <a id="officers" href="officers.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Officers</a>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+            }
+        </script>
+
+        <div style="position: relative; text-align: center;">
+            <a id="kp-fish-farm" href="#" onclick="toggleDropdown('protectedAreasSubMenu')" style="background-color: #0e3402; color: #ffffff; text-decoration: none; padding: 10px;">Protected Areas &#9662;</a>
+            <div id="protectedAreasSubMenu" style="display: none;">
+                <a id="protected" href="national.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">National Parks</a>
+                <a id="protected" href="sanctuaries.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Wildlife Sanctuaries</a>
+                <a id="protected" href="gameresrves.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Game Reserves</a>
+                <a id="protected" href="community.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Community GRS</a>
+                <a id="protected" href="wildlifeparks.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Wildlife Parks</a>
+            </div>
+        </div>
+
+        <div style="position: relative; text-align: center; margin-top: 10px;">
+            <a id="kp-fish-farm" href="#" onclick="toggleDropdown('moreSubMenu')" style="background-color: #0e3402; color: #ffffff; text-decoration: none; padding: 10px;">More &#9662;</a>
+            <div id="moreSubMenu" style="display: none;">
+                <a id="more" href="project.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Project</a>
+                <a id="more" href="events.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Events</a>
+                <a id="more" href="species.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Species</a>
+                <a id="more" href="awarnes.html" style="color: #fcd707; text-decoration: none; padding: 10px; display: block;">Awareness Program</a>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+            }
+        </script>
+
+    </div>
+    <nav class="navbar navbar-expand-lg" style="background-color:#1b550a; height: 160px; width: 100%;">
+        <div class="container-fluid text-white text-center">
+            <div class="row w-100 justify-content-center" style="margin-left: 0.1%;">
+                <div class="col-md-2 col-lg-2 col-sm-12" style="margin-top: 10px;">
+                    <img style="margin:auto; width: 170px;" src="image/wildlogo.png" alt="">
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-12 m-auto">
+                    <h3 class="fw-bold m-5 text-white text-center" style="text-shadow: 1px 10px 20px black; font-family: initial; letter-spacing: 2px; font-size: 35px;">Khyber Pakhtunkhwa Wild Life Department</h3>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-12"> <img class="logo" width="130px" src="image/logo.png" alt=""></div>
+            </div>
+        </div>
+    </nav>
+    <div class="" id="main">
+        <div class="container-fluid">
+            <div class="row my-4">
+
+                <div class="col-md-12">
+                    <div class="card card-success border border-2 border-dark bg-light">
+                        <div style="background-color: #1b550a;" class="card-header text-white fw-bold">
+                            <div class="card-title text-white">News</div>
+                        </div>
+                        <br>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <!-- form start -->
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="row mt-5">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="fw-bold">Title</label>
+                                            <input id="mName" type="text" name="title" placeholder="Title" class="form-control" autocomplete="off" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="fw-bold">Image</label>
+                                            <input type="file" name="image" class="form-control" accept="image/*" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="fw-bold">Date</label>
+                                            <input type="date" name="date" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="fw-bold">Description</label>
+                                            <textarea id="lName" name="description" placeholder="Description" class="form-control" autocomplete="off" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group m-5">
+                                            <button type="button" class="btn text-white shadow float-end" style="background-color:#1b550a ;" fdprocessedid="kqoon">Add More</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row my-4"></div>
+                                        <div class="col-md-12 my-2">
+                                            <table class="table">
+                                                <thead class="text-white" style="background-color: #1b550a;">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Title</th>
+                                                        <th scope="col">Description</th>
+                                                        <th scope="col">Date</th>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Update</th>
+                                                        <th scope="col">Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                                        <td><i class="fa-solid fa-trash"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                    <!-- Col-12 -->
+                </div>
+
+
+                <div class=" text-end my-3">
+                    <input style="background-color: #1b550a; " type="submit" class="btn text-white shadow float-right " value="Submit " name="saveUser1 ">
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+    </div>
+    <!-- Col-12 -->
+    </div>
+
+
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#txtharvest").inputmask("99-99-9999", {
+                "clearIncomplete": true
+            });
+            $("#farmerCNIC").inputmask("99999-9999999-9", {
+                "clearIncomplete": true
+            });
+            $('#txtharvest').datepicker({
+                uiLibrary: 'bootstrap5',
+                format: 'dd/mm/yyyy'
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap
